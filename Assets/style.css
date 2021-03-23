@@ -1,0 +1,177 @@
+/* variable for font  */
+:root {
+    --secondary: rgba(139, 179, 238);
+}
+/* import from google font  */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+/* edit all pade  */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.842);
+    
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-family: 'PT Sans', sans-serif;
+    background-color: #3c456a;
+    
+}
+
+.header h1 {
+    display: inline-block;
+    background-color: rgb(169, 226, 230);
+    color:  #3c456a;
+    padding-left: 100px;
+}
+ 
+
+header {
+    list-style-type: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ nav a {
+    text-decoration: none;
+    margin-left: 8px;
+    list-style-type: none;
+    padding-top: 15px;
+    margin-right: 20px;
+    color:  rgb(169, 226, 230);
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    font-size: 1.4rem;
+ }
+nav a:hover {
+    background-size: 100%;
+
+}
+
+.main-headers {
+    padding-left: 100px;
+    margin-left: 20%;
+    color: #3c456a;
+    display: grid;
+   
+}
+
+
+.main-content p {
+     color: #3c456a;
+     margin-left: 20px;
+     padding: 10px;
+}
+
+.hero {
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+
+.portfolio {
+  position: relative;
+  float: right;
+  bottom: 70px;
+  right: 60px;
+  background-color: rgb(139, 179, 238);
+  font-family: 'PT Sans', sans-serif;
+  margin-bottom: 70px;
+  font-size: 3vw;
+}
+
+.column p {
+    position: absolute;
+    float: right;
+    background-color: rgb(169, 226, 230);
+    margin-bottom: 50px;
+    margin-top: 200px;
+    text-align: center;
+    padding-left: 50px;
+    font-size: 25px;
+    border: 5px solid rgb(169, 226, 230);
+}
+
+#pic-1 {
+    border: 5px solid rgb(169, 226, 230);
+    height: 250px;
+    width: 600px;
+    display: inline-flex;
+    margin-top: 100px;
+    padding-left: 0px;
+    background-image: url("./img/pic-1.jpg");
+ } 
+
+.img-label {
+    position: absolute;
+    background-color: rgb(169, 226, 230);
+    margin-top: 100px;
+    padding-left: 350px;
+    margin-left: 0px;
+}
+ 
+#picTwo2 {
+    margin: 5px;
+    /* height: 80px; */
+    width: 250px;
+    padding-top: 0;
+    margin-top: 0;
+    border: 5px solid rgb(169, 226, 230);
+    float: right;
+    bac
+}
+
+.img-label2 {
+    margin-left: 0px;
+    
+}
+
+.pic-3 {
+    margin: 5px;
+    width: 40px;
+    height: 80px;
+    padding-top: 0;
+    margin-top: 0;
+    margin-left: 315px;
+    bottom: 200px;
+    float: right;
+}
+
+.pic-4
+
+span {
+    font-size: 15px;
+}
+
+.vertical-line {
+    border-left: 5px solid black;
+    margin-left: 100px;
+    padding-left: 80px;
+    
+}
+
+
+.contact-info a {
+    text-decoration: none;
+    padding: 5px 10px;
+}
