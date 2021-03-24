@@ -14,7 +14,21 @@
 
 body {
     background-color: rgba(255, 255, 255, 0.842);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
+}
+
+article {
+    margin-left: 100px;
+}
+
+section {
+    margin-left: 117px;
+}
+
+footer {
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .header {
@@ -24,7 +38,7 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 30px;
-    font-family: 'PT Sans', sans-serif;
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2d2d2f;
     
 }
@@ -39,7 +53,7 @@ body {
 
 header {
     list-style-type: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 500;
     font-size: 16px;
     display: flex;
@@ -70,10 +84,14 @@ nav a:hover {
 
 .main-headers {
     padding-left: 100px;
-    margin-left: 20%;
+    /* margin-left: 20%; */
     color: #3c456a;
-    display: flex;
-    
+    display: flex;   
+}
+
+.main-headers h2 {
+    font-size: 50px;
+    text-align: right;
 }
 
 
@@ -85,19 +103,23 @@ nav a:hover {
 
 .hero {
     display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
     width: 100%;
     height: 300px;
+    background-image: url("../assets/img/background.jpg");
+    background-size: cover;
+    
 }
 
 .portfolio {
-  position: relative;
-  float: right;
-  bottom: 70px;
-  right: 60px;
   background-color: rgb(139, 179, 238);
-  font-family: 'PT Sans', sans-serif;
-  margin-bottom: 70px;
-  font-size: 3vw;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 50px;
+  display: inline;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  padding: 10px;
 }
 
 .column p {
@@ -111,8 +133,8 @@ nav a:hover {
 
 #pic-1 {
     border: 5px solid rgb(169, 226, 230);
-    height: 250px;
-    width: 600px;
+    height: 300px;
+    width: 900px;
     display: inline-flex;
     margin-top: 100px;
     background-image: url("./img/pic-1.jpg");
@@ -126,8 +148,8 @@ nav a:hover {
 }
  
 #pic-2 {
-    height: 180px;
-    width: 300px;
+    height: 150px;
+    width: 450px;
     padding-top: 0;
     margin-top: 0;
     border: 5px solid rgb(169, 226, 230);
@@ -145,8 +167,8 @@ nav a:hover {
 
 #pic-3 {
     border: 5px solid rgb(169, 226, 230);
-    height: 180px;
-    width: 300px;
+    height: 150px;
+    width: 450px;
     padding-top: 0;
     margin-top: 0;
     bottom: 200px;
@@ -163,8 +185,8 @@ nav a:hover {
 
 #pic-4 {
     background-image: url(./img/pic-4.jpg);
-    height: 180px;
-    width: 300px;
+    height: 150px;
+    width: 450px;
     background-size: contain;
     border: 5px solid rgb(169, 226, 230);
 }
@@ -177,8 +199,8 @@ nav a:hover {
 #pic-5 {
     background-image: url(./img/pic-5.jpg);
     background-size: contain;
-    width: 300px;
-    height: 180px;
+    width: 450px;
+    height: 150px;
     border: 5px solid rgb(169, 226, 230);
 }
 
@@ -191,11 +213,23 @@ span {
     font-size: 15px;
 }
 
-.column:hover {
+#pic-1:hover {
     opacity: 50%;
     cursor: pointer;
 }
-.main-column:hover {
+#pic-2:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+#pic-3:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+#pic-4:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+#pic-5:hover {
     opacity: 50%;
     cursor: pointer;
 }
@@ -209,9 +243,13 @@ span {
 
 
 .contact-info a {
-    text-decoration: none;
+    text-decoration: underline;
+    color: #3c456a;
+    font-weight: bold;
+    font-size: 15px;
     padding: 5px 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
     
 }
 
@@ -240,19 +278,3 @@ span {
     justify-content: space-between;
 
 }
-/* ---- problem */
-/* .column {
-    float: left;
-    width: 25%;
-  }      
-
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  .content {
-    background-color: white;
-    padding: 10px;
-  } */
