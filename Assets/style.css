@@ -25,14 +25,14 @@ body {
     padding-bottom: 10px;
     font-size: 30px;
     font-family: 'PT Sans', sans-serif;
-    background-color: #3c456a;
+    background-color: #2d2d2f;
     
 }
 
 .header h1 {
     display: inline-block;
     background-color: rgb(169, 226, 230);
-    color:  #3c456a;
+    color:  #2d2d2f;
     padding-left: 100px;
 }
  
@@ -72,7 +72,8 @@ nav a:hover {
     padding-left: 100px;
     margin-left: 20%;
     color: #3c456a;
-    display: grid;
+    display: flex;
+    
 }
 
 
@@ -190,6 +191,15 @@ span {
     font-size: 15px;
 }
 
+.column:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+.main-column:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
 .vertical-line {
     border-left: 5px solid black;
     margin-left: 100px;
@@ -201,15 +211,34 @@ span {
 .contact-info a {
     text-decoration: none;
     padding: 5px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.contact-info {
+    height: 200px;
 }
 /* -------- w3 help --------- */
 .row {
-    margin: 8px -16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .row > .column{
     padding: 8px;
-    
+
+}
+
+.column {
+    margin: 20px;
+}
+
+.main-column {
+    display: flex;
+    justify-content: space-between;
+
 }
 /* ---- problem */
 /* .column {
