@@ -58,9 +58,6 @@ header {
     font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 500;
     font-size: 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
  nav a {
@@ -103,6 +100,8 @@ nav a:hover {
      padding: 10px;
 }
 
+
+
 .hero {
     display: flex;
     justify-content: flex-end;
@@ -124,123 +123,129 @@ nav a:hover {
   padding: 10px;
 }
 
-.column p {
-    position: absolute;
-    /* float: right; */
-    background-color: rgb(169, 226, 230);
-    text-align: center;
-    font-size: 25px;
-    border: 5px solid rgb(169, 226, 230);
+.mainBtn {
+    font-size: 100px !important;
 }
 
+.modalPic {
+    width: 100%;
+}
+
+#modalLink {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(121, 85, 189);
+    padding: 7px;
+    border-radius: 0.25rem;
+}
+#modal2Link {
+    text-decoration: none;
+    color: #2d2d2f;
+    background-color: #ABDBCE;
+    padding: 7px;
+    border-radius: 0.25rem;
+}
+#modal3Link {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(45, 88, 207);
+    padding: 7px;
+    border-radius: 0.25rem;
+}
+#modal4Link {
+    text-decoration: none;
+    color: #2d2d2f;
+    background-color: rgb(216, 176, 102);
+    padding: 7px;
+    border-radius: 0.25rem;
+}
+#modal5Link {
+    text-decoration: none;
+    color: #2d2d2f;
+    background-color: rgb(189, 85, 85);
+    padding: 7px;
+    border-radius: 0.25rem;
+}
+
+h5 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-header .btn-close {
+    margin: 0px !important;
+    padding: 0px !important;
+}
 #pic-1 {
-    border: 5px solid rgb(169, 226, 230);
     height: 300px;
-    width: 900px;
-    display: inline-flex;
+    width: 1000px;
     margin-top: 100px;
-    background-image: url("./img/pic-1.jpg");
+    background-image: url("./img/pic-1-dark.png");
+    background-size: cover;
  } 
 
-.img-label {
-    /* position: absolute; */
-    background-color: rgb(169, 226, 230);
-    margin-top: 100px;
-    padding-left: 100px;
-}
+
  
 #pic-2 {
     height: 150px;
     width: 450px;
     padding-top: 0;
     margin-top: 0;
-    border: 5px solid rgb(169, 226, 230);
-    background-image: url("./img/pic-2.jpg");
-    background-size: contain;
-}
-
-.img-label2 {
-    /* position: absolute; */
-    margin-bottom: 50px;
-    padding-left: 50px;
-    margin-top: 60px;
+    background-image: url("./img/weather-dark.png");
+    background-size: cover;
     
 }
 
+
+
 #pic-3 {
-    border: 5px solid rgb(169, 226, 230);
     height: 150px;
     width: 450px;
     padding-top: 0;
     margin-top: 0;
     bottom: 200px;
-    background-image: url(./img/pic-3.jpg);
+    background-image: url(./img/quiz-dark.png);
+    background-size: cover;
 }
 
-.img-label3 {
-    padding-left: 50px;
-    margin-bottom: 40px;
-    /* margin-right: 50px; */
-    margin-bottom: 80px;
-}
 
 
 #pic-4 {
-    background-image: url(./img/pic-4.jpg);
+    background-image: url(./img/scheduler-dark.png);
     height: 150px;
     width: 450px;
-    background-size: contain;
-    border: 5px solid rgb(169, 226, 230);
-}
-
-.img-label4 {
-    margin-top: 30px;
-    padding-left: 50px;
+    background-size: cover;
 }
 
 #pic-5 {
-    background-image: url(./img/pic-5.jpg);
-    background-size: contain;
+    background-image: url(./img/pass-dark.png);
+    background-size: cover;
     width: 450px;
     height: 150px;
-    border: 5px solid rgb(169, 226, 230);
+    
 }
 
-.img-label5 {
-    margin-top: 30px;
-    padding-left: 50px;
-}
-
-span {
-    font-size: 15px;
-}
 
 #pic-1:hover {
-    opacity: 50%;
+   
     cursor: pointer;
+    background-image: url(./img/pic-1-hover.png);
 }
 #pic-2:hover {
-    opacity: 50%;
     cursor: pointer;
+    background-image: url(./img/weather-hover.png);
 }
 #pic-3:hover {
-    opacity: 50%;
     cursor: pointer;
+    background-image: url(./img/quiz-hover.png);
 }
 #pic-4:hover {
-    opacity: 50%;
     cursor: pointer;
+    background-image: url(./img/scheduler-hover.png);
 }
 #pic-5:hover {
-    opacity: 50%;
     cursor: pointer;
-}
-
-.vertical-line {
-    border-left: 5px solid black;
-    margin-left: 100px;
-    padding-left: 80px;
-    
+    background-image: url(./img/pass-hover.png);
 }
 
 
@@ -266,13 +271,9 @@ span {
     align-items: center;
 }
 
-.row > .column{
-    padding: 8px;
-
-}
-
 .column {
     margin: 20px;
+    padding-left: 100px;
 }
 
 .main-column {
@@ -284,29 +285,62 @@ span {
 @media screen and (max-width:980px){
 
     .portfolio {
-        
+        display: block;
     }
-
+}
 
 @media screen and (max-width:768px){
-
-    #pic-1 {
-        width: 100%;
+    
+    nav a {
+        display: block;
+        flex-direction: row;
+        text-align: center;
+        margin-right: auto;
     }
 
     .portfolio {
         display: block;
+        text-align: center;
     }
 
-    main-headers h2 {
-        margin-left: 0%;
+    .header {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
     }
 
-    .vertical-line {
-        border-top: #3c456a 2px solid;
-        border-left: none;
-
+    .main-headers h2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .main-headers {
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
     }
 
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
 
+    .main-content p {
+        margin-left: 0px;
+    }
+
+    .main-column {
+        display: flex;
+        flex-direction: column;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
 }
