@@ -307,6 +307,10 @@ h5 {
         text-align: center;
     }
 
+    .hero {
+        width: 100%;
+    }
+
     .header {
         display: flex;
         text-align: center;
