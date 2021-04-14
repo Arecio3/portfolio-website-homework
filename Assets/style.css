@@ -184,7 +184,7 @@ h5 {
 }
 #pic-1 {
     height: 300px;
-    width: 1000px;
+    width: 100%;
     margin-top: 100px;
     background-image: url("./img/pic-1-dark.png");
     background-size: cover;
@@ -194,7 +194,7 @@ h5 {
  
 #pic-2 {
     height: 150px;
-    width: 450px;
+    width: 50%;
     padding-top: 0;
     margin-top: 0;
     background-image: url("./img/weather-dark.png");
@@ -206,7 +206,7 @@ h5 {
 
 #pic-3 {
     height: 150px;
-    width: 450px;
+    width: 50%;
     padding-top: 0;
     margin-top: 0;
     bottom: 200px;
@@ -219,14 +219,14 @@ h5 {
 #pic-4 {
     background-image: url(./img/scheduler-dark.png);
     height: 150px;
-    width: 450px;
+    width: 50%;
     background-size: cover;
 }
 
 #pic-5 {
     background-image: url(./img/pass-dark.png);
     background-size: cover;
-    width: 450px;
+    width: 50%;
     height: 150px;
     
 }
@@ -285,11 +285,6 @@ h5 {
     padding-left: 100px;
 }
 
-.main-column {
-    display: flex;
-    justify-content: space-between;
-
-}
 
 @media screen and (max-width:980px){
 
@@ -325,10 +320,16 @@ h5 {
         flex-wrap: wrap;
         text-align: center;
     }
+
     .main-headers {
         padding-left: 0px;
         display: flex;
         flex-direction: column;
+        width: 100%;
+    }
+
+    .mainBtn {
+        font-size: 40px !important;
     }
 
     .main-content {
@@ -338,19 +339,17 @@ h5 {
         
     }
 
-    .main-content p {
+    .main-content {
         margin-left: 0px;
+        text-align: center;
+        padding: 0px;
+        
     }
 
-    .main-column {
-        display: flex;
-        flex-direction: column;
+    .contact-info {
+        margin-left: 0;
     }
-    .column {
-        display: flex;
-        flex-direction: column;
-        margin-left: 0px;
-    }
+   
     
 
     
