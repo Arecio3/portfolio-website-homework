@@ -1,7 +1,7 @@
 # 02 Advanced CSS: Portfolio
 
 ## My updated portfolio website
-[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 This update was meant to add all projects that I have created throughout the bootcamp and be able to showcase them.
 ### New Features 
 - Modals for each project
